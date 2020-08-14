@@ -5,7 +5,7 @@ import com.kwgdev.spring5recipeapp.converters.RecipeCommandToRecipe;
 import com.kwgdev.spring5recipeapp.converters.RecipeToRecipeCommand;
 import com.kwgdev.spring5recipeapp.domain.Recipe;
 import com.kwgdev.spring5recipeapp.repositories.RecipeRepository;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

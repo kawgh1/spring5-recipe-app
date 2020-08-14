@@ -3,6 +3,7 @@ package com.kwgdev.spring5recipeapp.converters;
 import com.kwgdev.spring5recipeapp.commands.NotesCommand;
 import com.kwgdev.spring5recipeapp.domain.Notes;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,7 +17,7 @@ public class NotesToNotesCommandTest {
     public static final String RECIPE_NOTES = "Notes";
     NotesToNotesCommand converter;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         converter = new NotesToNotesCommand();
     }

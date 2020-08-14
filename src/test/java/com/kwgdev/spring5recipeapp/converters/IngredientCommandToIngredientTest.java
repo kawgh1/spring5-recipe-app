@@ -5,6 +5,7 @@ import com.kwgdev.spring5recipeapp.commands.UnitOfMeasureCommand;
 import com.kwgdev.spring5recipeapp.domain.Ingredient;
 import com.kwgdev.spring5recipeapp.domain.Recipe;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -24,7 +25,7 @@ public class IngredientCommandToIngredientTest {
 
     IngredientCommandToIngredient converter;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         converter = new IngredientCommandToIngredient(new UnitOfMeasureCommandToUnitOfMeasure());
     }

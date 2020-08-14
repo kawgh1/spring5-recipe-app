@@ -3,6 +3,7 @@ package com.kwgdev.spring5recipeapp.converters;
 import com.kwgdev.spring5recipeapp.commands.RecipeCommand;
 import com.kwgdev.spring5recipeapp.domain.*;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,7 +29,7 @@ public class RecipeToRecipeCommandTest {
     public static final Long NOTES_ID = 9L;
     RecipeToRecipeCommand converter;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         converter = new RecipeToRecipeCommand(
                 new CategoryToCategoryCommand(),

@@ -7,6 +7,7 @@ import com.kwgdev.spring5recipeapp.commands.RecipeCommand;
 import com.kwgdev.spring5recipeapp.domain.Difficulty;
 import com.kwgdev.spring5recipeapp.domain.Recipe;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -33,7 +34,7 @@ public class RecipeCommandToRecipeTest {
     RecipeCommandToRecipe converter;
 
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         converter = new RecipeCommandToRecipe(new CategoryCommandToCategory(),
                 new IngredientCommandToIngredient(new UnitOfMeasureCommandToUnitOfMeasure()),

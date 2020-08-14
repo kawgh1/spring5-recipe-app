@@ -1,7 +1,8 @@
 package com.kwgdev.spring5recipeapp.domain;
 
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
 
@@ -12,15 +13,17 @@ public class CategoryTest {
 
     Category category;
 
-    @Before
+    @BeforeEach
     public void setup() {
         category = new Category();
     }
 
     @Test
-    public void getId() {
+    public void getId() throws Exception {
         Long idValue = 4L;
-        category.setId(4L);
+
+        category.setId(idValue);
+
         assertEquals(idValue, category.getId());
     }
 

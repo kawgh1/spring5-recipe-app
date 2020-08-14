@@ -3,6 +3,7 @@ package com.kwgdev.spring5recipeapp.converters;
 import com.kwgdev.spring5recipeapp.commands.CategoryCommand;
 import com.kwgdev.spring5recipeapp.domain.Category;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,7 +17,7 @@ public class CategoryToCategoryCommandTest {
     public static final String DESCRIPTION = "descript";
     CategoryToCategoryCommand convter;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         convter = new CategoryToCategoryCommand();
     }

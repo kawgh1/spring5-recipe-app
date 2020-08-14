@@ -5,7 +5,8 @@ import com.kwgdev.spring5recipeapp.converters.RecipeToRecipeCommand;
 import com.kwgdev.spring5recipeapp.domain.Recipe;
 import com.kwgdev.spring5recipeapp.repositories.RecipeRepository;
 import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
@@ -32,7 +33,7 @@ public class RecipeServiceImplTest {
     @Mock
     RecipeCommandToRecipe recipeCommandToRecipe;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
 

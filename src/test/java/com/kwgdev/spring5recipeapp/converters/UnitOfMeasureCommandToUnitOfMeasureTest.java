@@ -3,6 +3,7 @@ package com.kwgdev.spring5recipeapp.converters;
 import com.kwgdev.spring5recipeapp.commands.UnitOfMeasureCommand;
 import com.kwgdev.spring5recipeapp.domain.UnitOfMeasure;
 import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,7 +18,7 @@ public class UnitOfMeasureCommandToUnitOfMeasureTest {
 
     UnitOfMeasureCommandToUnitOfMeasure converter;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         converter = new UnitOfMeasureCommandToUnitOfMeasure();
 
