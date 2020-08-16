@@ -30,6 +30,8 @@ public class Recipe {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "recipe")
     private Set<Ingredient> ingredients = new HashSet<>();
 
+    // Using the boxed Byte instead of byte,
+    // because Boxed primitives can't be null, this is a Hibernate team recommendation
     @Lob
     private Byte[] image;
 
