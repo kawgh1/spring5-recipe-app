@@ -2,8 +2,9 @@ package com.kwgdev.spring5recipeapp.controllers;
 
 import com.kwgdev.spring5recipeapp.domain.Recipe;
 import com.kwgdev.spring5recipeapp.services.RecipeService;
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.*;
 import org.springframework.test.web.servlet.MockMvc;
@@ -37,7 +38,7 @@ public class IndexControllerTest {
 
     IndexController controller;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception{
         MockitoAnnotations.initMocks(this);
 
