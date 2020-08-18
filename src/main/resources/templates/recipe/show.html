@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, template)}">
 <head>
     <meta charset="UTF-8"/>
     <title>Show Recipe</title>
@@ -176,11 +176,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-1">
-                    <a class="btn btn-default" href="#"
-                       th:href="@{'/'}" role="button">Back</a>
                 </div>
             </div>
         </div>
