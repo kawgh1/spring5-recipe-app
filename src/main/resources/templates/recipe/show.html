@@ -17,6 +17,8 @@
             crossorigin="anonymous" th:src="@{/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js}"></script>
 </head>
 <body>
+<br>
+<br>
 <!--/*@thymesVar id="recipe" type="com.kwgdev.spring5recipeapp.domain.Recipe"*/-->
 <div class="container-fluid" style="margin-top: 20px">
     <div class="row">
@@ -175,9 +177,18 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-1">
+                    <a class="btn btn-default" href="#"
+                       th:href="@{'/'}" role="button">Back</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<br>
+<br>
+<br>
+<br>
 </body>
 </html>
