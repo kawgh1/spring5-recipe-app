@@ -18,7 +18,7 @@ import static org.mockito.Mockito.*;
 /**
  * created by kw on 8/16/2020 @ 1:23 AM
  */
-class UnitOfMeasureServiceImplTest {
+public class UnitOfMeasureServiceImplTest {
 
     UnitOfMeasureToUnitOfMeasureCommand unitOfMeasureToUnitOfMeasureCommand = new UnitOfMeasureToUnitOfMeasureCommand();
     UnitOfMeasureService service;
